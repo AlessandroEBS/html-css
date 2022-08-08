@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'work Sans' Arial, Helvetica, sans-serif;
+            /*
+            Medidas absolutas:
+            cm, mm, in (polegada), px, pt, pc.
+            
+            Medidas relativas:
+            em, ex, rm, vw, vh, %
+            16px, geralmente é igual a 1em.
+
+            Recomendação: usar em ou px.
+            */
+            font-size: 16px;
+            font-weight: bolder;
+            font-style: italic, oblique;
+            text-decoration: underline;
+            /*
+            A família de fonte deve permitir todas essas configurações (negrito, itálico, sublinhado)
+            weight (peso), width (largura), height (altura)
+            lighter, normal, bold, bolder.
+            */
+        }
+
+        h1 {
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            /*
+            Shorthand font
+
+            - font-style -> font-weight -> font-size -> font-family
+            */
+            font: italic bolder 2em 'work sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'work sans'
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ratione consequuntur soluta, dignissimos quos assumenda magni facilis blanditiis, ex sunt mollitia earum eos aperiam ab. Recusandae velit commodi possimus cupiditate?</p>
+    <h2>Subtítulo de Exercício</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, dignissimos eveniet? Quaerat vero itaque, minus error ut quasi ipsa animi maiores dolore aspernatur nesciunt officiis magni ducimus eum doloribus cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ducimus asperiores itaque maxime quibusdam eligendi dolore excepturi quisquam corrupti aperiam qui perferendis tempora quas, commodi dolores cumque in facere placeat.</p>
+</body>
+</html>
