@@ -15,7 +15,7 @@
 
 .corpo {
     background: white;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #cabecalho {
@@ -26,18 +26,47 @@
 
 #cabecalho .titulo {
     padding-top: 50px;
+    font-variant: small-caps;
     font-size: 10vw;
 }
 
 #cabecalho .texto-cabecalho {
     padding-bottom: 50px;
-    font-family: ;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
 }
 
 .normal {
     padding: 100px 30px;
     font-size: 1.8rem;
     font-family: var(--fonte1);
+    background-color: white;
+    color: black;
+}
+
+.imagem {
+    background-color: aqua;
+    color: white;
+}
+
+.imagem > p {
+    background-color: rgba(0, 0, 0, 0.301);
+    max-width: 350px;
 }
 
 #img1 {
@@ -48,12 +77,9 @@
     font-size: 1.8rem;
 }
 
-#img1 .texto-img {
-    max-width: 350px;
-    margin-left: 30px;
-}
-
-#img2 .texto-img {
-    max-width: 350px;
-    margin-left: 30px;
+#rodape {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
