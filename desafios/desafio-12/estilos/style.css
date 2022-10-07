@@ -98,3 +98,45 @@ section > p {
     text-align: center;
     padding: 10px;
 }
+
+@media (max-width: 600px) {
+    .imagem > p {
+        background-color: rgba(0, 0, 0, 0.445);
+    }
+}
+
+@media (max-width: 420px) {
+    #cabecalho .titulo {
+        font-size: 16vw;
+    }
+
+    #cabecalho .texto-cabecalho {
+        font-size: 20px;
+    }
+
+    section {
+        font-size: 1.6em;
+    }
+
+    footer > p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 290px) {
+    #cabecalho .texto-cabecalho {
+        font-size: 15px;
+    }
+
+    section {
+        font-size: 1.1rem;
+    }
+
+    section.imagem > p {
+        background-color: rgba(0, 0, 0, 0.445);
+    }
+
+    footer > p {
+        font-size: 4.5vw;
+    }
+}
