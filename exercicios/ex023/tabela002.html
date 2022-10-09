@@ -13,6 +13,13 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: darkgray;
         }
 
         td, th {
@@ -28,6 +35,23 @@
         td.num {
             text-align: right;
         }
+
+        caption {
+            font-size: 1.1em;
+            font-weight: 900;
+            padding: 6px;
+            width: 400px;
+            margin: auto;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        p {
+            width: 200px;
+        }
     </style>
 </head>
 <body>
@@ -35,6 +59,7 @@
     <!--
         Anatomia para tabelas grandes
     TABLE
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -44,11 +69,11 @@
     -->
 </body>
     <table>
-
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
 
             </tr>
         </thead>
@@ -85,13 +110,35 @@
                 <td>Pernambuco</td>
                 <td class="num">3 547 087</td>
             </tr>
+
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3 429 320</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">3 312 420</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">4 230 494</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">2 423 409</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3 328 429</td>
+            </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">0000</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt vero dolor, expedita, a excepturi eveniet quo ut, quas qui suscipit laborum voluptate alias consequatur facere architecto unde odit amet soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequuntur dolorum nam atque aperiam eum. Obcaecati nobis iste tenetur esse, molestiae at rerum neque accusantium quibusdam architecto vero modi eligendi!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, commodi porro nesciunt eligendi sapiente aperiam dolorem quod incidunt sunt impedit cum iste eaque praesentium accusantium delectus saepe repudiandae provident voluptatibus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi tempora eum et aperiam quo ratione quae voluptas excepturi nemo esse nobis sunt, doloremque, praesentium perspiciatis, numquam est rerum quasi quibusdam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati expedita amet ducimus fugit iure, possimus excepturi incidunt quos recusandae suscipit modi vitae. Inventore libero, enim voluptatem officiis aliquid sint dolores? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi consequatur quisquam illum nulla magnam, labore ab sint distinctio sed expedita. Fugit, saepe in ullam error eius quis dolore ratione nostrum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad at, exercitationem ipsum adipisci quidem illum porro dolore impedit est odit cumque, quas enim molestias voluptas sapiente? Voluptatem, beatae quia. Animi?</p>
 </html>
