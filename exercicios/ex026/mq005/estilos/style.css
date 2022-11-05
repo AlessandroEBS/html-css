@@ -40,7 +40,6 @@ menu {
 menu > ul {
     list-style-type: none;
     text-align: center;
-    background-color: rgb(68, 68, 68);
     color: white;
 }
 
@@ -49,6 +48,8 @@ menu > ul > li {
     text-decoration: none;
     padding: 10px;
     border-top: 2px solid rgb(173, 173, 173);
+    cursor: pointer;
+    background-color: rgb(68, 68, 68);
 }
 
 menu li:hover {
